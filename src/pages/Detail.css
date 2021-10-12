@@ -1,0 +1,27 @@
+.detail {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail--container {
+    width: 70%;
+}
+
+.detail--arrowLeft {
+    font-size: 35;
+    color: #fff;
+    margin: 30px;
+    position: fixed;
+    top: 30px;
+}
+
+@media (max-width: 760px) {
+    .detail {
+        width: 100vh;
+    }
+    .detail--container {
+        width: 90%;
+    }
+}
