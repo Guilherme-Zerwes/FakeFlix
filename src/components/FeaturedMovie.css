@@ -1,0 +1,109 @@
+.featured {
+    height: 100vh;
+}
+
+.featured--gradientTop {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featured--gradientRight {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0 150px 30px;
+}
+
+.featured--name {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.featured--infos {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.featured--score, .featured--date, .featured--seasons {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.featured--score {
+    color: #46d369
+}
+
+.featured--description {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+}
+
+.featured--buttons {
+    margin-top: 15px;
+}
+
+.wathcbutton, .mylistbutton {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 0;
+    opacity: 1;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.wathcbutton:hover, .mylistbutton:hover {
+    opacity: 0.7;
+}
+
+.wathcbutton {
+    background-color: #fff;
+    color: #000;
+}
+
+.mylistbutton {
+    background-color: #333;
+    color: #fff;
+}
+
+.featured--generos {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+}
+
+@media (max-width: 760px) {
+    .featured {
+        height: 90vh;
+    }
+
+    .featured--name {
+        font-size: 20px;
+    }
+
+    .featured--description {
+        font-size: 16px;
+    }
+
+    .featured--infos {
+        font-size: 14px;
+    }
+
+    .wathcbutton, .mylistbutton {
+        padding: 5px 5px;
+    }
+
+    .featured--generos {
+        font-size: 16px;
+    }
+}
